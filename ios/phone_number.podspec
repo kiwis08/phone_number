@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'phone_number'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = 'Flutter plugin for phone number validation'
   s.description      = <<-DESC
 Flutter plugin for phone number validation
@@ -15,9 +15,9 @@ Flutter plugin for phone number validation
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.platform = :ios, '9.0'
+  s.platform = :ios, '13.0'
 
-  s.dependency 'PhoneNumberKit/PhoneNumberKitCore', '3.6.6'
+  s.dependency 'PhoneNumberKit/PhoneNumberKitCore', '3.7.10'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
